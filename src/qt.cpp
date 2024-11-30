@@ -14,16 +14,7 @@ int main(int argc, char** argv) {
 
     QApplication app{argc, argv};
     QWindow widget{};
-    widget.setOpacity(1);
-    
-    QRect rect{};
-
-    QSize size = app.primaryScreen()->size();
-
-
     widget.show();
-    widget.setWindowState(Qt::WindowFullScreen);
-
 
     return app.exec();
 }
